@@ -14,14 +14,15 @@ Developed a relational database using PostgreSQL to model user activity data for
 Technologies used: Python, PostgreSql, Star Schema, ETL pipelines, Normalization
 
 
-## Project 2: [Relational Databases - Data Modeling with PostgreSQL](https://github.com/dvu4/udacity-data-engineering/tree/master/data-modeling/project-1-postgres).
+## Project 2: [NoSQL Database - Data Modeling with Apache Cassandra](https://github.com/dvu4/udacity-data-engineering/tree/master/data-modeling/project-2-apache-cassandra).
 
 [![Project passed](https://img.shields.io/badge/project-passed-success.svg)](https://img.shields.io/badge/project-passed-success.svg)
 
 
 
-In this project, we apply Data Modeling with Cassandra and build an ETL pipeline using Python. We will build a Data Model around our queries that we want to get answers for. For our use case we want below answers:
+Developed NoSQL database with Cassandra and build an ETL pipeline using Python based on the original schema outlined in project one. We want to get some answers around the queries :
+* Get details of a song that was herad on the music app history during a particular session.
+* Get songs played by a user during particular session on music app.
+* Get all users from the music app history who listened to a particular song.
 
-Get details of a song that was herad on the music app history during a particular session.
-Get songs played by a user during particular session on music app.
-Get all users from the music app history who listened to a particular song.
+Technologies used: Python, Apache Cassandra, Denormalization
