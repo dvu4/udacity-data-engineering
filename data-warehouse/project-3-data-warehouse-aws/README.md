@@ -5,10 +5,10 @@
 
 ## Summary
 * [Overview](#Overview)
-* [Song Dataset](#Song Dataset)
-* [Log Dataset](#Log Dataset)
+* [Song Dataset](#Song-Dataset)
+* [Log Dataset](#Log-Dataset)
 * [Schema](#Schema)
-* [Project Files](#Project Files)
+* [Project Files](#Project-Files)
 * [Environment](#Environment)
 * [How to run](#How-to-run)
 * [Reference](#Reference)
