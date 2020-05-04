@@ -14,7 +14,7 @@ Developed a relational database using PostgreSQL to model user activity data for
 Technologies used: Python, PostgreSql, Star Schema, ETL pipelines, Normalization
 
 
-## Project 2: [Data Warehouse - Amazon Redshift](https://github.com/dvu4/udacity-data-engineering/tree/master/data-modeling/project-2-apache-cassandra).
+## Project 2: [NoSQL Database - Data Modeling with Apache Cassandra](https://github.com/dvu4/udacity-data-engineering/tree/master/data-modeling/project-2-apache-cassandra).
 
 [![Project passed](https://img.shields.io/badge/project-passed-success.svg)](https://img.shields.io/badge/project-passed-success.svg)
 
@@ -29,7 +29,7 @@ Technologies used: Python, Apache Cassandra, Denormalization
 
 
 
-## Project 3: [NoSQL Database - Data Modeling with Apache Cassandra](https://github.com/dvu4/udacity-data-engineering/tree/master/data-warehouse/project-3-data-warehouse-aws).
+## Project 3: [Data Warehouse - Amazon Redshift](https://github.com/dvu4/udacity-data-engineering/tree/master/data-warehouse/project-3-data-warehouse-aws).
 
 [![Project passed](https://img.shields.io/badge/project-passed-success.svg)](https://img.shields.io/badge/project-passed-success.svg)
 
