@@ -14,7 +14,7 @@ Developed a relational database using PostgreSQL to model user activity data for
 Technologies used: Python, PostgreSql, Star Schema, ETL pipelines, Normalization
 
 
-## Project 2: [NoSQL Database - Data Modeling with Apache Cassandra](https://github.com/dvu4/udacity-data-engineering/tree/master/data-modeling/project-2-apache-cassandra).
+## Project 2: [Data Warehouse - Amazon Redshift](https://github.com/dvu4/udacity-data-engineering/tree/master/data-modeling/project-2-apache-cassandra).
 
 [![Project passed](https://img.shields.io/badge/project-passed-success.svg)](https://img.shields.io/badge/project-passed-success.svg)
 
@@ -26,3 +26,17 @@ Developed NoSQL database with Cassandra and build an ETL pipeline using Python b
 * Get all users from the music app history who listened to a particular song.
 
 Technologies used: Python, Apache Cassandra, Denormalization
+
+
+
+## Project 3: [NoSQL Database - Data Modeling with Apache Cassandra](https://github.com/dvu4/udacity-data-engineering/tree/master/data-warehouse/project-3-data-warehouse-aws).
+
+[![Project passed](https://img.shields.io/badge/project-passed-success.svg)](https://img.shields.io/badge/project-passed-success.svg)
+
+Apply the Data Warehouse architectures we learnt and build a Data Warehouse on AWS Redshift. 
+
+* Build an ETL pipeline to extract and transform data stored in JSON format from S3 buckets into staging tables.
+* Move the data to Warehouse hosted on Amazon Redshift Cluster.
+* Develope the optimized queries required by the data analytics team
+
+Technologies used: Python, Amazon Redshift, AWS CLI, Amazon SDK, SQL, PostgreSQL
