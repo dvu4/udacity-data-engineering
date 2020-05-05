@@ -5,10 +5,10 @@
 
 ## Summary
 * [Overview](#Overview)
-* [Song Dataset](#Song-Dataset)
-* [Log Dataset](#Log-Dataset)
+* [Song Dataset](#Song Dataset)
+* [Log Dataset](#Log Dataset)
 * [Schema](#Schema)
-* [Project Files](#Project-Files)
+* [Project Files](#Project Files)
 * [Environment](#Environment)
 * [How to run](#How-to-run)
 * [Reference](#Reference)
@@ -127,7 +127,22 @@ LOG_JSONPATH='s3://udacity-dend/log_json_path.json'
 SONG_DATA='s3://udacity-dend/song_data'
 ```
 
- 
+## ETL Pipeline
+
+    - Supply the configuration for AWS cluster 
+    
+    - Write configuration for boto3 (AWS SDK for Python)
+    
+    - Launch Redshift cluster and create an IAM role that has read access to S3.
+
+    - Add Redshift database and IAM role info to `dwh.cfg`.
+
+    - Launch database connectivity configuration 
+    
+    - Run create_tables.py and checking the table schemas in your redshift database
+    
+    - Delete the cluster, roles and assigned permission 
+    
 ## Environment 
 Python 3.6 or above
 
@@ -137,6 +152,7 @@ psycopg2 - PostgreSQL database adapter for Python
 ## How to run
 
 The data source are provided at [S3 Bucket](https://aws.amazon.com/en/s3/) and you only need to run the project for [AWS Redshift Cluster](https://aws.amazon.com/en/redshift/)
+
 
 ### Create tables
 ```python create_tables.py ``` 
@@ -151,3 +167,10 @@ The data source are provided at [S3 Bucket](https://aws.amazon.com/en/s3/) and y
 [AWS Redshift](https://aws.amazon.com/redshift/getting-started/?p=rs&bttn=hero&exp=b)
 
 [S3 Bucket](https://aws.amazon.com/s3/)
+
+[Chapter 2 - directly starts with steps to perform on AWS without providing any background on AWS/EC2/Redshift/s3/IAM](https://knowledge.udacity.com/questions/147988)
+
+[The purpose of creating staging tables](https://knowledge.udacity.com/questions/124682)
+
+[ETL Staging Tables](https://www.timmitchell.net/post/2017/06/14/etl-staging-tables/)
+
