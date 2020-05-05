@@ -9,13 +9,13 @@ config.read('dwh.cfg')
 
 # DROP TABLES
 
-staging_events_table_drop = "DROP TABLE IF EXIST staging_events"
-staging_songs_table_drop  = "DROP TABLE IF EXIST staging_songs"
-songplay_table_drop       = "DROP TABLE IF EXIST fact_songplay"
-user_table_drop           = "DROP TABLE IF EXIST dim_user"
-song_table_drop           = "DROP TABLE IF EXIST dim_song"
-artist_table_drop         = "DROP TABLE IF EXIST dim_artist"
-time_table_drop           = "DROP TABLE IF EXIST dim_time"
+staging_events_table_drop = "DROP TABLE IF EXISTS staging_events"
+staging_songs_table_drop  = "DROP TABLE IF EXISTS staging_songs"
+songplay_table_drop       = "DROP TABLE IF EXISTS fact_songplay"
+user_table_drop           = "DROP TABLE IF EXISTS dim_user"
+song_table_drop           = "DROP TABLE IF EXISTS dim_song"
+artist_table_drop         = "DROP TABLE IF EXISTS dim_artist"
+time_table_drop           = "DROP TABLE IF EXISTS dim_time"
 
 
 # CREATE STAGING TABLES
@@ -47,7 +47,7 @@ time_table_drop           = "DROP TABLE IF EXIST dim_time"
 #    "userId":"53"
 #}    
 staging_events_table_create= ("""
-CREATE TABLE IF NOT EXIST staging_events 
+CREATE TABLE IF NOT EXISTS staging_events 
 (
         artist        VARCHAR,
         auth          VARCHAR,
@@ -112,11 +112,11 @@ songplay_table_create = ("""
 CREATE TABLE IF NOT EXISTS fact_songplay 
 (
             songplay_id INTEGER IDENTITY(0,1) PRIMARY KEY sortkey, 
-            start_time  TIMESTAMP REFERENCES dim_time(start_time), 
-            user_id     INTEGER REFERENCES dim_user(user_id), 
+            start_time  TIMESTAMP NOT NULL REFERENCES dim_time(start_time), 
+            user_id     INTEGER NOT NULL REFERENCES dim_user(user_id), 
             level       VARCHAR,
-            song_id     VARCHAR REFERENCES dim_song(song_id), 
-            artist_id   VARCHAR REFERENCES dim_artist(artist_id), 
+            song_id     VARCHAR NOT NULL REFERENCES dim_song(song_id), 
+            artist_id   VARCHAR NOT NULL REFERENCES dim_artist(artist_id), 
             session_id  INTEGER, 
             location    VARCHAR, 
             user_agent  VARCHAR,

@@ -5,10 +5,11 @@
 
 ## Summary
 * [Overview](#Overview)
-* [Song Dataset](#Song Dataset)
-* [Log Dataset](#Log Dataset)
+* [Song Dataset](#Song-Dataset)
+* [Log Dataset](#Log-Dataset)
 * [Schema](#Schema)
-* [Project Files](#Project Files)
+* [Project Files](#Project-Files)
+* [ETL Pipeline](#ETL-Pipeline)
 * [Environment](#Environment)
 * [How to run](#How-to-run)
 * [Reference](#Reference)
@@ -173,4 +174,3 @@ The data source are provided at [S3 Bucket](https://aws.amazon.com/en/s3/) and y
 [The purpose of creating staging tables](https://knowledge.udacity.com/questions/124682)
 
 [ETL Staging Tables](https://www.timmitchell.net/post/2017/06/14/etl-staging-tables/)
-
