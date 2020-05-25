@@ -40,3 +40,17 @@ Apply the Data Warehouse architectures we learnt and build a Data Warehouse on A
 * Develope the optimized queries required by the data analytics team
 
 Technologies used: Python, Amazon Redshift, AWS CLI, Amazon SDK, SQL, PostgreSQL
+
+
+
+## Project 4: [Data Lake - Spark](https://github.com/dvu4/udacity-data-engineering/tree/master/data-lake/project-4-data-lake-with-spark).
+
+[![Project passed](https://img.shields.io/badge/project-passed-success.svg)](https://img.shields.io/badge/project-passed-success.svg)
+
+Build a Data Lake on AWS cloud using Spark and AWS EMR cluster. The data lake will serve as a Single Source of Truth (SSOT) for the Analytics Platform. Spark jobs are created to scale up ELT pipeline that moves data from landing zone on S3 (data warehouse) and transform and stores data in processed zone on S3 (data lake).
+
+* Create an EMR Hadoop Cluster
+* Further develop the ETL Pipeline copying datasets from S3 buckets, data processing using Spark and writing to S3 buckets using efficient partitioning and parquet formatting.
+* Fast-tracking the data lake buildout using (serverless) AWS Lambda and cataloging tables with AWS Glue Crawler.
+
+Technologies used: Python, Spark, AWS S3, EMR, Athena, Amazon Glue, Parquet.
