@@ -6,7 +6,7 @@ Projects and resources developed in the [DEND Nanodegree](https://www.udacity.co
 
 [![Project passed](https://img.shields.io/badge/project-passed-success.svg)](https://img.shields.io/badge/project-passed-success.svg)
 
-Developed a relational database using PostgreSQL to model user activity data for a music streaming app. Skills include:
+Develope a relational database using PostgreSQL to model user activity data for a music streaming app. Skills include:
 * Created a relational database using PostgreSQL
 * Developed a Star Schema database using optimized definitions of Fact and Dimension tables. Normalization of tables.
 * Built out an ETL pipeline to optimize queries in order to understand what songs users listen to.
@@ -20,7 +20,7 @@ Technologies used: Python, PostgreSql, Star Schema, ETL pipelines, Normalization
 
 
 
-Developed NoSQL database with Cassandra and build an ETL pipeline using Python based on the original schema outlined in project one. We want to get some answers around the queries :
+Develop NoSQL database with Cassandra and build an ETL pipeline using Python based on the original schema outlined in project one. We want to get some answers around the queries :
 * Get details of a song that was herad on the music app history during a particular session.
 * Get songs played by a user during particular session on music app.
 * Get all users from the music app history who listened to a particular song.
