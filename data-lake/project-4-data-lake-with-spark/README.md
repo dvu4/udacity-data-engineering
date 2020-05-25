@@ -1,4 +1,6 @@
-# Sparkify's Data Lake ELT process
+# Project 4 Data Lake with Spark
+
+[![Project passed](https://img.shields.io/badge/project-passed-success.svg)](https://img.shields.io/badge/project-passed-success.svg)
 
 ## Summary
 
