@@ -16,12 +16,19 @@ os.environ['AWS_SECRET_ACCESS_KEY']=config['AWS_SECRET_ACCESS_KEY']
 
 
 def create_spark_session():
+    """
+    Creates Spark session
+    Put a config key spark.jars.packages using SparkSession
+    Access S3 from Spark Cluster using Hadoop version 2.x or greater
+    """
     spark = SparkSession \
         .builder \
         .config("spark.jars.packages", "org.apache.hadoop:hadoop-aws:2.7.0") \
         .getOrCreate()
     return spark
 
+
+# https://issues.apache.org/jira/browse/SPARK-21752
 
 # song_data is a subset of real data from the Million Song Dataset. 
 # Each file is in JSON format and contains metadata about a song and the artist of that song. 
@@ -40,6 +47,13 @@ def create_spark_session():
 #    "year": 0
 
 def process_song_data(spark, input_data, output_data):
+    """
+    Process the song data files and extract the song and artist tables
+        param spark :  Spark Context
+        param input_data : input file path
+        param output_data: output file path
+    """
+
     # get filepath to song data file
     song_data = input_data + "song_data/*/*/*/*json"
     
@@ -90,6 +104,13 @@ def process_song_data(spark, input_data, output_data):
 
 
 def process_log_data(spark, input_data, output_data):
+    """
+    Process the event log of Sparkify app usage and extract data for the user, time and songplays tables specifically for 'NextSong' event
+        param spark :  Spark Context
+        param input_data : input file path
+        param output_data: output file path
+    """
+
     # get filepath to log data file
     log_data = input_data + "log-data/*.json"
 
